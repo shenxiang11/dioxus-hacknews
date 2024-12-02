@@ -2,7 +2,7 @@
 
 use crate::Comment;
 use dioxus::prelude::*;
-
+use crate::ui::send::Send;
 use super::CommentsState;
 
 #[component]
@@ -24,6 +24,7 @@ pub fn Comments() -> Element {
               StoryComment { comment }
             }
           }
+            Send {}
         },
     }
 }
